@@ -12,7 +12,7 @@ public class OrderService {
 	}
 	
 	// Método
-	public Double valorTotal(Order order) {
+	public double total(Order order) {
 		return order.getBasic() - order.getBasic() * (order.getDiscount() / 100);
 	}
 	

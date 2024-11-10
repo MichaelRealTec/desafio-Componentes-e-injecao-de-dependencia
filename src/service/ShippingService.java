@@ -12,7 +12,7 @@ public class ShippingService {
 	}
 	
 	// Método
-	public Double shipping(Order order) {
+	public double shipment(Order order) {
 		Double frete = 0.0;
 		if(order.getBasic() < 100.00) {
 			frete = 20.00;

@@ -25,7 +25,7 @@ public class Program {
 		OrderService orderService = new OrderService(order);
 		
 		System.out.println("Pedido código " + order.getCode());
-		System.out.printf("Valor total: R$ %.2f", (orderService.valorTotal(order) + shippingService.shipping(order)));
+		System.out.printf("Valor total: R$ %.2f", (orderService.total(order) + shippingService.shipment(order)));
 		
 		
 		sc.close();
